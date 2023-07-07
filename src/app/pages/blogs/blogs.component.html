@@ -1,0 +1,52 @@
+<section class="blog">
+  <div class="blog__header">
+    <app-page-header matIcon="dashboard" title="Blogs" [pageHeaderContent]="getPageHeaderContent()"></app-page-header>
+  </div>
+
+  <div class="blog__cards">
+    <div class="row">
+      <div *ngFor="let blog of blogList | slice:0:4" class="blog__card col-md-6">
+        <div class="blog-card">
+          <div class="blog-card__image">
+            <!-- Image content -->
+            <img src="./assets/images/oil-gas-rigs-vector-illustration_92926-186 1.png" alt="Blog Image">
+          </div>
+          <div class="blog-card__content">
+            <div class="content-header">
+              <!-- Card header content -->
+              {{blog.title}}
+            </div>
+            <div class="content-desc">
+              <!-- Card content -->
+              {{blog.body}}
+            </div>
+            <div class="content-action">
+              Read More
+            </div>
+            <div class="content-info">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="info-date">
+                    <mat-icon>access_time</mat-icon>
+                    22 July 2020
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-author">
+                    <mat-icon> person_pin</mat-icon>
+                    Alex Paul
+                  </div>
+
+                </div>
+              </div>
+              <!-- Card actions -->
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

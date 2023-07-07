@@ -1,0 +1,25 @@
+// _fonts.scss
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../assets/fonts/ProximaNova-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../assets/fonts/Proxima\ Nova\ Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../assets/fonts/Proxima\ Nova\ Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../assets/fonts/Proxima\ Nova\ Bold.otf") format("opentype");
+  font-weight: 700;
+}

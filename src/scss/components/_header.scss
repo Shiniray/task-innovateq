@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: rem(76);
+  width: 100%;
+  background-color: $white;
+  color: $text-color;
+  padding: rem(0) rem(33);
+  box-shadow: 0px 5.333334445953369px 5.333334445953369px 0px #f0f0f0;
+
+  &__logo {
+    /* Logo styles here */
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__notification-action {
+    /* Notification action styles here */
+    color: black;
+    .mat-badge-content {
+      font-size: rem(14);
+      font-weight: 400;
+      width: rem(20);
+      height: rem(18);
+      border: rem(1) solid $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: rem(9);
+      background: #de4140;
+      right: rem(-8) !important;
+      top: rem(-8) !important;
+    }
+  }
+
+  &__profile-action {
+    /* Profile action styles here */
+    margin-left: rem(20);
+    .profile {
+      width: rem(44);
+      height: rem(44);
+      font-size: rem(20);
+      font-weight: 700;
+      border-radius: 100%;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: $primary-color;
+      flex-shrink: 0;
+    }
+  }
+}

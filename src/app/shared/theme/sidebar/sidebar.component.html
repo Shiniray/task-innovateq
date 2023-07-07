@@ -1,0 +1,35 @@
+<nav class="sidebar">
+  <!-- Sidebar header -->
+  <div class="sidebar-header">
+    <h3 class="sidebar-title">Menu</h3>
+  </div>
+
+  <!-- Sidebar menu -->
+  <ul class="sidebar__menu">
+    <li class="sidebar__menu-item">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="sidebar__menu-link"
+        routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        <span>
+          Home
+        </span>
+      </a>
+    </li>
+    <li class="sidebar__menu-item">
+      <a [routerLink]="['/users']" class="sidebar__menu-link" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        <span>
+          Users
+        </span>
+      </a>
+    </li>
+    <li class="sidebar__menu-item">
+      <a [routerLink]="['/blogs']" class="sidebar__menu-link" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        <span>
+          Blogs
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,29 @@
+<section class="users">
+  <div class="users__header">
+    <app-page-header matIcon="dashboard" title="Users" [pageHeaderContent]="getPageHeaderContent()"></app-page-header>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="users__datatable">
+        <table datatable [dtOptions]="dtOptions" class="row-border hover"></table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Joining Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of usersList">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+          </tr>
+        </tbody>
+
+      </div>
+    </div>
+  </div>
+
+</section>

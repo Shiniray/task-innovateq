@@ -1,0 +1,9 @@
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+@Component({
+  selector: 'app-full-layout',
+  templateUrl: './full-layout.component.html',
+  styleUrls: ['./full-layout.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Default,
+})
+export class FullLayoutComponent {}

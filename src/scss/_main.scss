@@ -1,0 +1,28 @@
+// main.scss
+// Import the _fonts.scss file
+@import "utilities/fonts";
+
+// Import variables
+@import "variables/_variables";
+
+// Import Utilities
+@import "utilities/config";
+
+// Import partials
+// @import "partials/_buttons";
+@import "partials/_typography";
+
+// Import components
+@import "components/_header";
+@import "components/_sidebar";
+@import "components/pageHeader";
+@import "components/blogs";
+
+// @import "components/_content";
+body {
+  background-color: $background-color;
+  font-family: $font-family;
+}
+* {
+  box-sizing: border-box;
+}

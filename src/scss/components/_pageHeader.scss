@@ -1,0 +1,41 @@
+.card {
+  // card styles here
+  border-radius: rem(8) !important;
+  box-shadow: none !important;
+  padding-bottom: rem(9);
+  &__header {
+    // card header styles here
+    color: $text-color;
+    font-size: rem(16);
+    font-weight: 700;
+    font-family: $font-family;
+    padding: rem(12) !important;
+  }
+
+  &__title {
+    // card title styles here
+    display: flex !important;
+    align-items: center;
+  }
+
+  &__icon {
+    // card icon styles here
+    margin-right: rem(8);
+  }
+
+  &__content {
+    // card content styles here
+    background-color: #f8fbfd;
+    padding-left: rem(44);
+    max-height: rem(30);
+    height: rem(30);
+    font-size: rem(12);
+    font-weight: 400;
+    font-family: $font-family;
+    color: #4d5a65;
+    display: flex;
+    align-items: center;
+    border-top: rem(1) solid $background-color;
+    border-bottom: rem(1) solid $background-color;
+  }
+}
